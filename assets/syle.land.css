@@ -1,0 +1,85 @@
+*{
+    font-family: 'Poppins' sans-serif ;
+}
+html{
+    scroll-behavior: smooth;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.row{    
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 5px  rgba(0,0,0,0.2);
+}
+
+.button {
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: blue;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
+  
+  .button:hover {background-color: #3e8e41}
+  
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  } 
+  
+ .tablink { 
+    background-color: transparent;
+  float: left;
+  border: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+}
+.tablink:hover{
+    font-weight: bolder;
+    color: white;
+    font-size: large;
+}
+.tablink:focus{
+    font-weight: bolder;
+    color: white;
+    font-size: large;
+}
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 50px;
+}
+
+.modal-close{
+    cursor: pointer ;
+    font-size: 2rem;
+}
+
+.feature {
+    transition: transform .5s ease-in-out;
+  }
+  
+  .feature:hover {
+    transform: scale(1.05);
+  }
+  
+.feature:hover{
+    position: relative;
+    top: -2px;
+    left:1px;
+    z-index: 200;
+    background-color: #0b5ed7;
+    color: white;
+    cursor: pointer;
+}
