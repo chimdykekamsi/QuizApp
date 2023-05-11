@@ -147,8 +147,8 @@ function addAnswers($quid,$oid,$qid){
 
 function deleteQuiz($id){
     global $conn;
-    foreach (fetchWhere('quiz','id',$id) as $key )
-    extract($key);
+    $row = mysqli_fetch_assoc(fetchWhere('quiz','id',$id));
+    extract($row);
     if ($quizuser < 1 ) {
         $sql = "DELETE FROM answers WHERE quizid=$id";
         $result = $conn->query($sql);
@@ -164,7 +164,7 @@ function deleteQuiz($id){
     
         
         addNotify($quizauthor,"Your Quiz has been deleted");
-        message('success','Succesful','admin/quiz');
+        header("Location: quiz");        
         return;
     }else {
     message('warning','You cannot delete this Quiz, It has been taken by a user','admin/quiz');
