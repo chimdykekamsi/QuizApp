@@ -109,14 +109,14 @@
         <main class="col-lg-9 col-12 p-3">
             <nav class="row p-2 border-bottom mt-2">
                 <h3 class="col-7 mb-4">Custom Quiz</h3>
-                <div class="col-5 row"
+                <div class="col-5 row">                       
                     <?php if(mysqli_num_rows(fetchWhere('notifications','user',$_SESSION['userid'])) > 0){?>                   
                     <button class="col-3 btn" style="position:relative" onclick="createT('notify')"><h3 class="ti ti-bell  text-primary"  title="Notifications" ><sup ><span class="bg-primary rounded-circle" style="font-size:10px">0</span></sup></h3> </button>
                     <?php } else {                        
                     ?>    
                     <button class="col-3 btn" style="position:relative" onclick="createT('notify')"><h3 class="ti ti-bell  text-primary"  title="Notifications" > </button>
                     <?php }?>
-                        <form action="" method="post" class="col-3 row">
+                    <form action="" method="post" class="col-3 row">
                             <button class=" col-10 btn" type="submit" name="logout" onclick="javascript: return confirm('Confirm Logout?')"><h3 class="ti ti-power-off text-secondary "  title="Log out"></h3> </button>
                         </form>
                 </div>

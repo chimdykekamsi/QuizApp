@@ -165,7 +165,7 @@
                        
                             
                     ?>
-                    <div class="col-10 col-lg-3 bod p-3 m-4">
+                    <div class="col-8 col-lg-3 bod p-3 mb-4">
                    
                           <h5 class="text-center"><?=$quizname?></h5>
                     
@@ -194,7 +194,7 @@
                         if ($quizauthor == 'admin'){
                             
                     ?>
-                    <div class="col-10 col-lg-3 bod p-3 m-4  ">
+                    <div class="col-8 col-lg-3 bod p-3 mb-4  ">
                         <h5 class="text-center">  <?=$quizname?> </h5>
                             
                         <div class="col-11 m-3 row">
