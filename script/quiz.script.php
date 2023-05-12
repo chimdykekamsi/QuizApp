@@ -133,7 +133,7 @@ function addQuestion($question,$optioncount,$quizid){
 
 function addOptions($option,$questionid,$quizid){
     global $conn;
-    $option = filter_mail($option);
+    $option = clean_input($option);
   $sql = "INSERT INTO `options` (`option`, `questionid`, `quizid`) VALUES('$option',$questionid,$quizid)";
   $result = $conn->query($sql);
 }

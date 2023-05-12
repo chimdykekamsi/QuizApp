@@ -242,7 +242,7 @@
                         <h5><i class="ti ti-game"></i>Quiz Maxed</h5>
                         <h3><?php
                         $id = $_SESSION['userid'];
-                                $sql = "SELECT * FROM `history` WHERE `score` = `quizmarks` AND `userid` = '$id'";
+                                $sql = "SELECT * FROM `history` WHERE `score` >= `quizmarks` AND `userid` = '$id'";
                                 $result = $conn->query($sql);
                                 echo mysqli_num_rows($result);
                         ?></h3>

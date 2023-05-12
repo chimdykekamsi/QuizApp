@@ -67,7 +67,7 @@ ob_start();
                     <form action="" class="was-validated" method="post">
                        <div class="form-group">
                           <label for="username">Username:</label>
-                          <input type="text" class="form-control" id="username"  name="username" required>
+                          <input type="text" class="form-control" id="username"  name="username" required >
                           <div class="invalid-feedback">Please fill out this field.</div>
                        </div>
                        <div class="form-group">
@@ -77,8 +77,8 @@ ob_start();
                        </div>
                        <div class="form-group">
                           <label for="pwd">Password:</label>
-                          <input type="password" class="form-control" id="pwd"  name="pwd" required>
-                          <div class="invalid-feedback">Please fill out this field.</div>
+                          <input type="password" class="form-control" id="pwd"  name="pwd" required minlength="5">
+                          <div class="invalid-feedback">Password must have atleast 5 characters</div>
                        </div>
                        <button type="submit" class="btn btn-primary col-lg-5 mt-2" name="register">Signup</button>
                     </form>
@@ -105,8 +105,8 @@ ob_start();
                       </div>
                       <div class="form-group">
                          <label for="pwd">Password:</label>
-                         <input type="password" class="form-control" id="pwd2"  name="pswd" required>
-                         <div class="invalid-feedback">Please fill out this field.</div>
+                         <input type="password" class="form-control" id="pwd2"  name="pswd" required minlength="5">
+                         <div class="invalid-feedback">Password must have atleast 5 characters.</div>
                       </div>
                       <button type="submit" class="btn btn-primary col-lg-5 mt-2" name="login">Login</button>
                    </form>

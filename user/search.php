@@ -21,7 +21,7 @@
     if (!isset($_POST['search'])) {
         header('Location: quiz');
     }else{
-        $search = $_POST['searchtag'];
+        $search = clean_input($_POST['searchtag']);
     }
 ?>
 
